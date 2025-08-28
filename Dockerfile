@@ -4,8 +4,8 @@ WORKDIR /plantilla-docker
 
 COPY . /plantilla-docker/
 
-RUN apk add update \
-    && apk install git
+RUN apk update \
+    && apk add git
 
 EXPOSE 5173
 
